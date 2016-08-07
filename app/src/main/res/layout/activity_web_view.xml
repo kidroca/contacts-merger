@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/activity_web_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kidroca.contactsmerger.WebViewActivity">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <WebView android:id="@+id/webview"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+
+                 android:scaleType="center"
+            >
+
+        </WebView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_margin="4dp"
+            android:layout_gravity="center_horizontal|bottom" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnDecrease"
+                android:layout_weight="1"
+                android:src="@android:drawable/btn_minus"
+                android:background="@android:color/transparent"
+                android:contentDescription="Decrease"
+                android:scaleType="fitCenter"
+                android:paddingRight="40dp"
+                android:onClick="onDecreaseClick"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnIncrease"
+                android:layout_weight="1"
+                android:src="@android:drawable/btn_plus"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:contentDescription="Increase"
+                android:paddingLeft="44dp"
+                android:onClick="onIncreaseClick"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/btnRefresh"
+                android:layout_weight="1"
+                android:src="@android:drawable/btn_star"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:contentDescription="Refresh"
+                android:onClick="onResetClick"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

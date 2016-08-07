@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ContactsMerger</string>
+    <string name="action_settings">Settings</string>
+</resources>
